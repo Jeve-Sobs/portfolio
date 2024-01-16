@@ -6,24 +6,46 @@
     <title>Felix's Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Oswald', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            background-color: #576066;
         }
 
         header {
             text-align: center;
-            padding: 20px;
+            padding: 10px;
             background-color: #333;
             color: #fff;
         }
+
+        header h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 107px; /* Adjust the font size as needed */
+            color: #fff; /* White text color */
+            margin: 5px; /* Adjust the margin as needed */
+            letter-spacing: 10px;
+            transform: scaleX(1.1);
+        }
+        header h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 60px;
+            color: #fff;
+            margin: 2px;
+        }
+        @font-face {
+            font-family: 'Oswald';
+            src: url('fonts/Oswald-Regular.ttf') format('truetype');
+            font-weight: 300; /* Regular */
+            font-style: normal;
+        }
+
 
         main {
             max-width: 1400px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #60696f;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
@@ -31,12 +53,12 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
-            margin-top: 20px;
+            margin-top: 0px;
             justify-content: center; /* Center the images horizontally */
         }
 
         .gallery img {
-            width: 320px;
+            width: 335px;
             height: 190px;
             border-radius: 8px;
             cursor: pointer;
@@ -45,6 +67,7 @@
         .caption {
             margin-top: 10px;
             text-align: center; /* Center the caption text */
+            color: #fff;
         }
        /* Gallery Lightbox Styles */
        #lightbox {
@@ -100,6 +123,7 @@
 <body>
     <header>
         <h1>Felix Nagel</h1>
+        <h2>Most images are clickable</h2>
     </header>
     <main>
         <div class="gallery" id="imageGallery">
@@ -107,47 +131,66 @@
                 <a href="https://23-2-dsdn242.github.io/mddn-242-data-mapping-Jeve-Sobs/" target="_blank">
                     <img src="images/image1.jpg" alt="Image 1">
                 </a>
-                <p class="caption">In this project, we employed AI to generate masks for our subjects, followed by the creation of customized filters to enhance the images. The task posed a challenge, given the imperfections in the AI-generated masks. Overcoming this hurdle, I successfully crafted filters that elevated the visual appeal of the images, showcasing my adaptability and problem-solving skills in AI image processing.</p>
+                <p class="caption">AI Filter Processing - In this project, I took on the task of creating subject masks to train an AI model.
+                    Leveraging my expertise and overcoming various hurdles in the process, I crafted masks that serve as a foundation
+                    for the model's learning. Subsequently, I developed a filter to seamlessly apply to the model's output, ensuring
+                    a polished and refined final result. <br>
+                    <a href="https://github.com/23-2-DSDN242/mddn-242-data-mapping-Jeve-Sobs/tree/main" target="_blank">View the repository here</a></p>
             </div>
             <div>
                 <a href="https://23-2-dsdn242.github.io/mddn242-parametric-design-Jeve-Sobs/index.html" target="_blank">
                     <img src="images/image2.jpg" alt="Image 2">
                 </a>
-                <p class="caption"> I designed the entire alphabet and numbers 0-9 using a mere 12 parameters. This project was a blend of technical prowess and creative ingenuity. Despite the constraints, I demonstrated my ability to achieve complex outcomes efficiently, showcasing a minimalist yet impactful approach to typographic design.</p>
+                <p class="caption"> TetraTxt - Having been given a brief to create a font using just 12 parameters or less, I created TetraTxt -
+                    a font that is minimalistic yet impactful. <br>
+                    <a href="https://github.com/23-2-DSDN242/mddn242-parametric-design-Jeve-Sobs" target="_blank">View the repository here</a></p>
             </div>
             <div>
                 <img src="images/image3.jpg" alt="Image 1" onclick="openLightbox(0)">
-                <p class="caption">Description for Image 1.</p>
+                <p class="caption">MyShoppingList – an innovative app crafted using react native, and made to streamline the shared shopping experience
+                    for housemates. Seamlessly collaborate, edit, and synchronize your shopping lists with ease. <br>
+                    <a href="https://repository-link-for-myshoppinglist.com" target="_blank">View the repository here</a></p>
             </div>
             <div>
                 <a href="https://youtu.be/NmihqktocQQ" target="_blank">
                     <img src="images/image4.jpg" alt="Image 4">
                 </a>
-                <p class="caption">Description for Image 4.</p>
+                <p class="caption">Zombie First-Person Shooter Game - I designed and developed a Zombie first-person shooter game, drawing inspiration
+                    from Call of Duty Zombies. The process involved creating captivating environments, crafting gameplay mechanics, and
+                    bringing zombies to life for an immersive gaming experience. <br>
             </div>
             <div>
                 <a href="https://23-2-dsdn242.github.io/mddn242-time-based-media-Jeve-Sobs/" target="_blank">
                     <img src="images/image5.jpg" alt="Image 5">
                 </a>
-                <p class="caption">Description for Image 5.</p>
+                <p class="caption">Geometric Alarm Clock - I responded to the brief I was provided by conceptualizing and crafting a dynamic timepiece
+                    that offers a unique representation of each hour. This clock undergoes a captivating design transformation,
+                    providing users with a visually dynamic and engaging experience as the day progresses. <br>
+                    <a href="https://github.com/23-2-DSDN242/mddn242-time-based-media-Jeve-Sobs" target="_blank">View the repository here</a></p>
             </div>
             <div>
                 <a href="https://youtu.be/iPg6MkV2fu8" target="_blank">
                     <img src="images/image6.jpg" alt="Image 6">
                 </a>
-                <p class="caption">Description for Image 6.</p>
+                <p class="caption">London Street Racer - I designed and created a racing game that allows users to race against AI opponents on the
+                    iconic streets of London. <br>
             </div>
             <div>
                 <a href="https://www.google.com" target="_blank">
                     <img src="images/image7.png" alt="Image 7">
                 </a>
-                <p class="caption">Description for Image 7.</p>
+                <p class="caption">Library App - For a university assignment, I crafted SQL queries for a library app, ensuring efficient and accurate
+                    data retrieval and manipulation to enhance the app's functionality. <br>
+                    <a href="https://repository-link-for-library-app.com" target="_blank">View the repository here</a></p>
             </div>
             <div>
                 <a href="https://www.google.com" target="_blank">
                     <img src="images/image8.png" alt="Image 8">
                 </a>
-                <p class="caption">Description for Image 8.</p>
+                <p class="caption">Forge Mod - I developed a Forge mod for a Minecraft server, enabling players to access crates and achieve prestige
+                    within the game. This mod enhances the gameplay experience by introducing new features and opportunities for
+                    progression. <br>
+                    <a href="https://github.com/NagelFelix/PMMO-Prestige-Addon" target="_blank">View the repository here</a></p>
             </div>
         </div>
         <div id="lightbox">
